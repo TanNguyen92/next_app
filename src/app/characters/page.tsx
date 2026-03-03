@@ -24,6 +24,7 @@ export default function Characters() {
 
   console.log("Characters fetched:", characters);
   console.log("First character:", characters[0]);
+  console.log("test")
 
   return (
     <div>
