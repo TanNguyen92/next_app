@@ -24,6 +24,8 @@ export default function Characters() {
 
   const test = characters.map(c => c.house);
 
+  const test2 = characters.map(c => c.name);
+  
   return (
     <div>
       <Suspense fallback={<div>Chargement…</div>}>
