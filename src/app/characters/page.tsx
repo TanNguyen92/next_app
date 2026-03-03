@@ -23,6 +23,7 @@ export default function Characters() {
   }
 
   const test = characters.map(c => c.house);
+  console.log(test);
 
   return (
     <div>
