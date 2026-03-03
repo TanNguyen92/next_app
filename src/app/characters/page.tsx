@@ -22,9 +22,6 @@ export default function Characters() {
     return <div>Aucun personnage trouvé.</div>;
   }
 
-  console.log("Characters fetched:", characters);
-  console.log("First character:", characters[0]);
-
   return (
     <div>
       <Suspense fallback={<div>Chargement…</div>}>
