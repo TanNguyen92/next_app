@@ -28,6 +28,9 @@ export default function Characters() {
   const test2 = characters.map(c => c.house);
   console.log(test2);
   
+  const uniqueHouses = Array.from(new Set(test));
+  console.log(uniqueHouses);
+
   return (
     <div>
       <Suspense fallback={<div>Chargement…</div>}>
