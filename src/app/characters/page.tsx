@@ -22,10 +22,11 @@ export default function Characters() {
     return <div>Aucun personnage trouvé.</div>;
   }
 
-  const test = characters.map(c => c.house);
+  const test = characters.map(c => c.name);
   console.log(test);
 
-  const test2 = characters.map(c => c.name);
+  const test2 = characters.map(c => c.house);
+  console.log(test2);
   
   return (
     <div>
