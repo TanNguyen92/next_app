@@ -22,9 +22,7 @@ export default function Characters() {
     return <div>Aucun personnage trouvé.</div>;
   }
 
-  console.log("Characters fetched:", characters);
-  console.log("First character:", characters[0]);
-  console.log("test")
+  const test = characters.map(c => c.house);
 
   return (
     <div>
