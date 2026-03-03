@@ -1,0 +1,42 @@
+.flagContainer {
+  overflow: hidden;   /* Empêche l'image de dépasser pendant l'animation */
+  animation: wave 3s ease-in-out 2s infinite;
+}
+
+.flagsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* L'image du drapeau */
+.flag {
+  width: 100%;
+  height: auto;
+  transform-origin: top;     /* Le dépliage part du haut */
+  transform: scaleY(0);      /* Drapeau totalement plié */
+}
+
+.flagContainer .flag {
+  animation: unfold 1.8s ease-out forwards;
+}
+
+
+@keyframes wave {
+  0% { transform: scaleY(1) rotate(-1deg); }
+  50% { transform: scaleY(1) rotate(1deg); }
+  100% { transform: scaleY(1) rotate(-1deg); }
+}
+
+
+/* Animation de dépliage vertical */
+@keyframes unfold {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
